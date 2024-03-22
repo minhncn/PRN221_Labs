@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPF_ScoreStorage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_ScoreStorage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Browse" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="Browse_Click" Cursor="Hand"/>
+        <TextBox x:Name="filePath" HorizontalAlignment="Left" Height="23" Margin="93,7,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="516"/>
+        <ComboBox x:Name="yearDropdown" HorizontalAlignment="Left" Margin="92,46,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Import" HorizontalAlignment="Left" Margin="227,47,0,0" VerticalAlignment="Top" Width="75" Click="Import_Click" Cursor="Hand"/>
+        <Label Content="Select Year" HorizontalAlignment="Left" Margin="8,45,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnViewNumberCandidatesStatistics" Content="View Year Statistics" HorizontalAlignment="Left" Margin="12,118,0,0" VerticalAlignment="Top" Width="112" Height="21" Cursor="Hand" Click="btnViewNumberCandidatesStatistics_Click"/>
+        <Label Content=" Deleted Year" HorizontalAlignment="Left" Margin="5,79,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="yearDropdownDeleted" HorizontalAlignment="Left" Margin="93,80,0,0" VerticalAlignment="Top" Width="120"/>
+
+        <Grid Name="loadingGrid" Background="#AAFFFFFF" Visibility="Collapsed">
+            <TextBlock Text="Importing Data..." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+        </Grid>
+
+        <Button x:Name="btnClearYearData" Content="Clear" HorizontalAlignment="Left" Margin="227,80,0,0" VerticalAlignment="Top" Width="75" Click="btnClearYearData_Click" Cursor="Hand"/>
+        <Button x:Name="btnViewValedictorianStatistics" Content="View Valedictorian Statistics" HorizontalAlignment="Left" Margin="156,163,0,0" VerticalAlignment="Top" Width="164" Height="21" Cursor="Hand" Click="btnViewValedictorianStatistics_Click"/>
+        <ComboBox x:Name="yearDropdownValedictorian" HorizontalAlignment="Left" Margin="12,162,0,0" VerticalAlignment="Top" Width="127"/>
+    </Grid>
+</Window>

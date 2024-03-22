@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPF_ScoreStorage.Statistics"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_ScoreStorage"
+        mc:Ignorable="d"
+        Title="Statistics" Height="450" Width="800">
+    <Grid>
+        <Grid Name="dataStatistics"></Grid>
+        <Grid Name="loadingGrid" Background="#AAFFFFFF" Visibility="Collapsed">
+            <TextBlock x:Name="txtLoadingNotification" Text="Loading Data..." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold"/>
+        </Grid>
+    </Grid>
+</Window>

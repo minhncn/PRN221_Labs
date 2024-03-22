@@ -1,0 +1,27 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #f2f6f9;
+}
+
+.navbar-header {
+    background-color: #204ac9 !important;
+}
+
+    .navbar-header ul li a, .navbar-header .navbar-brand {
+        color: white !important;
+    }
